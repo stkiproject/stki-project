@@ -1,9 +1,11 @@
 import joblib
 import re
 import string
+import nltk
 from nltk.corpus import stopwords
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import os
+nltk.download('stopwords')
 
 # Inisialisasi stop words dan stemmer
 stop_words = set(stopwords.words('indonesian'))
